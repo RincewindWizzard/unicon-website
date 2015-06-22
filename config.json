@@ -21,6 +21,7 @@
     "smartLists": true,
     "smartypants": true
   },
+  "ignore": ["style/bootstrap/*"],
   "paginator": {
     "perPage": 3
   }

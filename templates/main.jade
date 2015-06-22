@@ -3,7 +3,7 @@ html(lang="de")
   head
     meta(charset='utf-8')
     title=page.title
-    link(rel='stylesheet', href='/style/main.css')
+    link(rel='stylesheet', href='/style/style.css')
     script(type='text/javascript', src='/script/main.js')
   body
     header
@@ -14,3 +14,5 @@ html(lang="de")
           li
             a(href='/posts/#{name}/') #{name}
     != page.html
+    button.blue(type="submit") Button
+      

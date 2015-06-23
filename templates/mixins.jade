@@ -14,12 +14,24 @@ mixin nav(name, id, style)
             ul.nav.navbar-nav
                 block
  
-mixin nav_item(href, active)
-    li(class=active): a( href=href )
-        block
+mixin nav_item(href, title)
+  if title && (page.title == title || page.metadata.active_menu == title)
+    li.active: a( href=href )
+      block
+  else
+    li: a( href=href )
+      block
+
  
-mixin nav_item_dropdown(href, active)
-    li(class=["dropdown", active])
+mixin nav_item_dropdown(href, title)
+  if page.title == title || page.metadata.active_menu == title
+    li(class=["dropdown", "active"])
+        a.dropdown-toggle( href=href, data-toggle="dropdown", role="button", aria-expanded="false" )= attributes.label
+            span.caret
+        ul.dropdown-menu( role="menu" )
+            block
+  else
+    li(class=["dropdown"])
         a.dropdown-toggle( href=href, data-toggle="dropdown", role="button", aria-expanded="false" )= attributes.label
             span.caret
         ul.dropdown-menu( role="menu" )

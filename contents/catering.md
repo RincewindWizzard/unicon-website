@@ -1,6 +1,6 @@
 ---
 title: Catering
-template: main.jade
+template: page.jade
 place: Marktbereich
 ----
 

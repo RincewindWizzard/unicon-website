@@ -1,2 +1,2 @@
-# wintersmith-coffe-less-base
-A rough base for projects using wintersmith
+# unicon-website
+Static Website for Unicon Event.

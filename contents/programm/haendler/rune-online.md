@@ -1,6 +1,6 @@
 ---
 title: Rune Online
-template: main.jade
+template: page.jade
 place: Marktbereich
 ----
 

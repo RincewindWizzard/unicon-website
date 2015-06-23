@@ -1,6 +1,6 @@
 ---
 title: Animexx e.V.
-template: main.jade
+template: page.jade
 place: Workshop Area
 ----
 

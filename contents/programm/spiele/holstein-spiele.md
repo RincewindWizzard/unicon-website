@@ -1,6 +1,6 @@
 ---
 title: Holstein Spiele
-template: main.jade
+template: page.jade
 place: Brettspielbereich
 ----
 

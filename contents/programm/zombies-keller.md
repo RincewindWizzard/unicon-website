@@ -1,6 +1,6 @@
 ---
 title: Zombies im Keller
-template: main.jade
+template: page.jade
 place: Kellereingang bei den Hörsälen
 ----
 

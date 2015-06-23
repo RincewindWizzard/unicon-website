@@ -1,6 +1,6 @@
 ---
 title: Bambi Cosplay
-template: main.jade
+template: page.jade
 place: Marktbereich
 ----
 

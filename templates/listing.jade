@@ -1,6 +1,12 @@
 extends page.jade
 
 block append content
-  each val, key in contents.programm
-    p= key
+  //- obj = JSON.stringify(page);
+  //- obj = JSON.decycle(contents);
+  ul
+    - each val, key in page.parent
+      if key != "index.md"
+        li
+          a(href="/#{page.parent[key].filepath.relative.replace('.md', '.html')}")!= page.parent[key].metadata.title
+
   //p= page.filepath.relative

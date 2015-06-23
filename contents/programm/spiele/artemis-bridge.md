@@ -1,6 +1,6 @@
 ---
 title: Artemis Bridge Simulator
-template: main.jade
+template: page.jade
 place: Hörsaal
 ----
 

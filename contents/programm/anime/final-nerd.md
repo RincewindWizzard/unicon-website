@@ -1,6 +1,6 @@
 ---
 title: Final Nerd
-template: main.jade
+template: page.jade
 place: Workshop-Area
 ----
 

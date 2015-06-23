@@ -1,6 +1,6 @@
 ---
 title: Anime Kultur Verein
-template: main.jade
+template: page.jade
 place: Workshop Area
 ----
 

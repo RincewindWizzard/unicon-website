@@ -1,6 +1,6 @@
 ---
 title: Brettspiele-Workshop
-template: main.jade
+template: page.jade
 place: Brettspielbereich
 ----
 

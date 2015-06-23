@@ -1,6 +1,6 @@
 ---
 title: Autorenstand
-template: main.jade
+template: page.jade
 place: Marktbereich
 ----
 

@@ -1,6 +1,6 @@
 ---
 title: Mage Wars
-template: main.jade
+template: page.jade
 place: Brettspiel-Bereich
 ----
 

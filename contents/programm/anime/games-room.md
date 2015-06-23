@@ -1,6 +1,6 @@
 ---
 title: Gamesroom
-template: main.jade
+template: page.jade
 place: Workshop-Area
 ----
 

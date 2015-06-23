@@ -1,6 +1,6 @@
 ---
 title: Battletech
-template: main.jade
+template: page.jade
 place: Battletech Area
 ----
 

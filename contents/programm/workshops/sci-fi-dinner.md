@@ -1,6 +1,6 @@
 ---
 title: Sci-Fi Dinner
-template: main.jade
+template: page.jade
 place: Workshop-Area
 ----
 

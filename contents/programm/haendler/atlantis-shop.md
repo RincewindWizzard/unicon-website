@@ -1,6 +1,6 @@
 ---
 title: Atlantis-Fantasyshop Neumünster
-template: main.jade
+template: page.jade
 place: Marktbereich
 ----
 

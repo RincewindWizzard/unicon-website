@@ -1,6 +1,6 @@
 ---
 title: Kochen wie in Manga und Anime
-template: main.jade
+template: page.jade
 place: Workshop-Area
 ----
 

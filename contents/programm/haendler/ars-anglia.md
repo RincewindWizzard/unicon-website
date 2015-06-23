@@ -1,6 +1,6 @@
 ---
 title: Ars Anglia
-template: main.jade
+template: page.jade
 place: 
 ----
 

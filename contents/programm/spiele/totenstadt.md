@@ -1,6 +1,6 @@
 ---
 title: Totenstadt
-template: main.jade
+template: page.jade
 place: Brettspielbereich
 ----
 

@@ -1,6 +1,6 @@
 ---
 title: Applewar Pictures
-template: main.jade
+template: page.jade
 place: Hörsaal
 ----
 

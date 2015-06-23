@@ -1,6 +1,6 @@
 ---
 title: 4D Logik Spiele
-template: main.jade
+template: page.jade
 place: Brettspiel Bereich
 ----
 Wir haben kurze Strategiespiele für zwei Personen,

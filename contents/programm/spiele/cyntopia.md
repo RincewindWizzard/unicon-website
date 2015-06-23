@@ -1,6 +1,6 @@
 ---
 title: Cyntopia
-template: main.jade
+template: page.jade
 place: Brettspielbereich
 ----
 

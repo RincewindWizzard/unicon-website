@@ -1,18 +1,18 @@
 //- Navbar mixins
 mixin nav(name, id, style)
-    - var style = (typeof style === 'undefined') ? "default" : style
-    nav( role="navigation", class=["navbar", "navbar-" + style] )
-        .navbar-header
-            button.navbar-toggle.collapsed( type="button", data-toggle="collapse", data-target="#" + id, aria-expanded="false", aria-controls="navbar")
-                span.sr-only Toggle navigation
-                span.icon-bar
-                span.icon-bar
-                span.icon-bar
-            a.navbar-brand(href="/")= name
- 
-        .collapse.navbar-collapse( id=id )
-            ul.nav.navbar-nav
-                block
+  - var style = (typeof style === 'undefined') ? "default" : style
+  nav( role="navigation", class=["navbar", "navbar-" + style] )
+    .navbar-header
+      button.navbar-toggle.collapsed( type="button", data-toggle="collapse", data-target="#" + id, aria-expanded="false", aria-controls="navbar")
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand(href="/")= name
+   
+    .collapse.navbar-collapse( id=id )
+      ul.nav.navbar-nav
+        block
  
 mixin nav_item(href, title)
   if title && (page.title == title || page.metadata.active_menu == title)
@@ -45,3 +45,17 @@ mixin nav_header
         block
  
 //- End navbar mixins
+
+//- Panel Mixins
+mixin panel(title, cls)
+  div.panel.panel-default(class=cls)
+    div.panel-heading=title
+    div.panel-body
+      block
+
+
+mixin panel_base(title, cls)
+  div.panel.panel-default(class=cls)
+    div.panel-body
+      block
+

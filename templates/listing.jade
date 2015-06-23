@@ -1,12 +1,17 @@
 extends page.jade
 
-block append content
-  //- obj = JSON.stringify(page);
-  //- obj = JSON.decycle(contents);
-  ul
-    - each val, key in page.parent
-      if key != "index.md"
-        li
-          a(href="/#{page.parent[key].filepath.relative.replace('.md', '.html')}")!= page.parent[key].metadata.title
+mixin event_panel(event)
+  +panel(event.title, "fullheight")
+    !=event.html
 
-  //p= page.filepath.relative
+block append content
+  .container
+    - var keys = Object.keys(page.parent).filter(function(x) { return page.parent[x].filename != page.filename; })
+    - for(var i = 0; i < keys.length; i += 3)
+        .row
+          - for(var j = 0; j < 3 && i + j < keys.length; j++)
+            - event = page.parent[keys[i + j]]
+            .col-md-4
+              +event_panel(event)
+
+

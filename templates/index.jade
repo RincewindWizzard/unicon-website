@@ -1,25 +1,33 @@
 extends ./layout.jade
 
 block header
-  +nav("Unicon 40", "dropdown_menu")
-    +nav_item( "/", "Unicon 40") Startseite
-    +nav_item_dropdown( "#", "Programm")( label="Programm")
-      +nav_item( "/programm/anime/") Anime
-      +nav_item( "/programm/haendler/") Händler
-      +nav_item( "/programm/zombies-keller.html") Nerf War
-      +nav_item( "/programm/spiele/") Spiele
-      +nav_item( "/programm/workshops/") Workshops
+  .container
+    div#banner
+      div.banner-area
+      +nav("Unicon 40", "main_menu")
+        +nav_item( "/", "Unicon 40") Startseite
+        +nav_item_dropdown( "#", "Programm")( label="Programm")
+          +nav_item( "/programm/anime/") Anime
+          +nav_item( "/programm/haendler/") Händler
+          +nav_item( "/programm/zombies-keller.html") Nerf War
+          +nav_item( "/programm/spiele/") Spiele
+          +nav_item( "/programm/workshops/") Workshops
 
-    +nav_item( "/catering.html", "Catering") Catering
-    +nav_item( "http://unicon-kiel.de/wiki/") Mitmachen
-    +nav_item( "/impressum.html", "Impressum") Impressum
+        +nav_item( "/catering.html", "Catering") Catering
+        +nav_item( "http://unicon-kiel.de/wiki/") Mitmachen
+        +nav_item( "/impressum.html", "Impressum") Impressum
     
 
 block content
+  
   .container
     .jumbotron
       != page.html
 
 block footer
   .container
-    p.text-muted Unicon 40 - Organisiert von AKF und KiAi
+    p.text-muted
+      | Unicon 40 - Organisiert von 
+      a(href="http://www.akf-hsg.uni-kiel.de/") AKF
+      | und 
+      a(href="http://kiel.animexx.de/") KiAi

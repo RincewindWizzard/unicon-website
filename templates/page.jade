@@ -2,4 +2,5 @@ extends index.jade
 
 block content
   .container
-    != page.html
+    +panel_base(page.title)
+      != page.html
